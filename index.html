@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="PackeRL">
+    <meta name="keywords"
+          content="Reinforcement Learning, Computer Networking, Routing Optizimation, Simulation, Traffic Engineering, ns-3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Di-SkilL</title>
+
+    <!--  &lt;!&ndash; Global site tag (gtag.js) - Google Analytics &ndash;&gt;-->
+    <!--  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>-->
+    <!--  <script>-->
+    <!--    window.dataLayer = window.dataLayer || [];-->
+
+    <!--    function gtag() {-->
+    <!--      dataLayer.push(arguments);-->
+    <!--    }-->
+
+    <!--    gtag('js', new Date());-->
+
+    <!--    gtag('config', 'G-PYVRSFMDRL');-->
+    <!--  </script>-->
+
+    <script type="text/javascript">
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <!--  <link rel="icon" href="./static/images/favicon.svg">-->
+    <!--  <link rel="icon" href="./static/images/Untitled.ico">-->
+    <link rel="icon" href="./static/images/alr-logo_large.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">Learning Sub-Second Routing Optimization in Computer
+                        Networks requires Packet-Level Dynamics</h1>
+                    <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href=https://alr.iar.kit.edu/21_357.php>Andreas Boltres</a><sup>1,2</sup>,</span>
+                        <span class="author-block">
+              <a href=https://alr.iar.kit.edu/21_221.php target="_blank">Niklas Freymuth</a><sup>2</sup>,</span>
+                        <span class="author-block">Patrick Jahnke<sup>1</sup>,</span>
+                        <span class="author-block">
+                <a href=https://hpi.de/karl/people/holger-karl.html target=_blank>Holger Karl</a><sup>3</sup>,</span>
+                        <span class="author-block">
+              <a href=https://alr.iar.kit.edu/21_65.php target=_blank>Gerhard Neumann</a><sup>2</sup>,</span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup>SAP SE, Walldorf</span><br/>
+                        <span class="author-block"><sup>2</sup>Autonomous Learning Robots (ALR), Karlsruhe Institute of Technology (KIT)</span><br/>
+                        <span class="author-block"><sup>3</sup>Internet-Technology and Softwarization, Hasso Plattner Institute, Potsdam</span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- PDF Link. -->
+                            <span class="link-block">
+                <a href="https://openreview.net/pdf?id=H95g8UpYKY"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+                            <span class="link-block">
+                <a href="https://"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+                            <span class="link-block">
+                <a href="https://"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-archive"></i>
+                  </span>
+                  <span>MAGNNETO Baseline Models</span>
+                  </a>
+                    <br/>
+                                <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (PackeRL and RL Modules)</span>
+                  </a>
+              </span>
+                <span class="link-block">
+                <a href="https://"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Scenario Generator)</span>
+                  </a>
+              </span>
+
+              </span>
+                        </div>
+                        This paper was published at <a href="https://jmlr.org/tmlr/papers/">TMLR 2024</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <img src="./static/images/fig1.jpg">
+        Figure 1: Re-optimizing packet routes based on the network topology and current utilization and load values can minimize
+        congestion, delay and packet drops. In this illustration, the longer but higher-capacity path (thicker edges)
+        is preferred to the shorter path when traffic spikes for the
+        <span style="color: #b45f06">orange (top)</span>
+        and
+        <span style="color: #6a329f">purple (bottom)</span>
+        node, causing the algorithm to re-route traffic over the
+        <span style="color: #0b5394">blue (left)</span>
+        node instead of the
+        <span style="color: #38761d">green (right)</span>
+        one.
+    </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    Finding efficient routes for data packets is an essential task in computer networking.
+                    The optimal routes depend greatly on the current network topology, state and traffic demand,
+                    and they can change within milliseconds. Reinforcement Learning can help to learn network
+                    representations that provide routing decisions for possibly novel situations. So far, this has
+                    commonly been done using fluid network models. We investigate their suitability for
+                    millisecond-scale adaptations with a range of traffic mixes and find that packet-level
+                    network models are necessary to capture true dynamics, in particular in the presence of TCP traffic.
+                    To this end, we present <b><i>PackeRL</i></b>, the first packet-level Reinforcement Learning
+                    environment for routing in generic network topologies. Our experiments confirm that learning-based
+                    strategies that have been trained in fluid environments do not generalize well to this more
+                    realistic, but more challenging setup.
+                    Hence, we also introduce two new algorithms for learning sub-second Routing Optimization. We present
+                    <b><i>M-Slim</i></b>, a dynamic shortest-path algorithm that excels at high traffic volumes but is
+                    computationally hard to scale to large network topologies, and <b><i>FieldLines</i></b>, a novel
+                    next-hop policy design that re-optimizes routing for any network topology within milliseconds
+                    without requiring any re-training. Both algorithms outperform current learning-based approaches
+                    as well as commonly used static baseline protocols in scenarios with high-traffic volumes.
+                    All findings are backed by extensive experiments in realistic network conditions in our fast and
+                    versatile training and evaluation framework.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+
+        <h2 class="title is-3">PackeRL: Training RL Agents for Routing Optimization in Versatile Network Scenarios and Packet-Level Simulation</h2>
+
+        <div class="columns is-centered">
+            <div class="column is-full-width">
+
+                <p>
+                Recent advances in Reinforcement Learning (RL) for Routing Optimization (RO) in Computer Networks
+                have largely leveraged simulation-based environments, since covering a large variety of network
+                situations can with real-world experiments can be prohibitively expensive. However, the choice of
+                network model significantly impacts the generalization of learned policies to real-world scenarios.
+                While fluid models are computationally efficient, they abstract away the packet-level dynamics that
+                are crucial for capturing the true behavior of e.g. TCP traffic. Currently, there exists no
+                framework for RL-powered RO approaches that offers both a realistic simulation backend,
+                and a comprehensive toolset for training and evaluation on wide ranges of realistic network
+                settings. Here, we present <i>PackeRL</i>, a framework leveraging
+                    <a href="https://www.nsnam.org">ns-3</a>
+                    for packet-level simulation
+                which supports versatile <i>network scenarios</i> (network topology,
+                flow-level traffic demands and events like link failures). Our experimental results are the first
+                to deliberately show the advantage of training in such packet-level dynamics over using
+                fluid models.
+                </p>
+                <br>
+
+                <img src="./static/images/nx.png" style="width: auto; height: auto; margin-left: auto; margin-right: auto;
+          display: block;">
+                <br>
+                <p>
+                    Figure 2: Examples of 10-node (left) and 25-node (right) network topologies generated with
+                    <i>PackeRL</i> scenario generator.
+                </p>
+                <br>
+            </div>
+        </div>
+
+        <h2 class="title is-3">RL Policy Designs for Dynamic Routing Optimization</h2>
+
+        <div class="columns is-centered">
+            <div class="column is-full-width">
+                <p>
+                    Common RL-based RO approaches infer link weights that are used to compute shortest paths,
+                    or they infer next-hop decisions per routing node and traffic destination directly.
+                    While approaches of the former kind generally scale poorly with network topology size,
+                    approaches of the latter kind are more flexible but require policy adjustments or re-training
+                    when the network topology changes. In this work, we present two novel RL policy designs for
+                    dynamic RO that address these challenges:
+                    <i>M-Slim</i> optimizes the inference mechanism and policy architecture of
+                    <a href="https://github.com/BNN-UPC/Papers/wiki/MAGNNETO-TE">MAGNNETO</a>,
+                    a recent Graph Neural Network approach for topology-agnostic RO, to reduce inference
+                    time by one to two orders of magnitude. <i>FieldLines</i> is a novel next-hop policy design that
+                    re-optimizes routing for any network topology within milliseconds without requiring any re-training.
+                </p>
+                <br>
+                <img src="./static/images/fig_policy.jpg" style="width: auto; height: auto; margin-left: auto; margin-right: auto;
+          display: block;">
+                <br>
+                <p>
+                    Figure 3: Example of how the learnable policies <i>M-Slim</i> and <i>FieldLines</i> obtain routing
+                    from network states. The red edges denote highly loaded data pathways, e.g. due to full packet
+                    buffers. The actor of <i>M-Slim</i> outputs link weights that are used to calculate routing paths.
+                    These routing paths are then broken down into individual next-hop neighbor selections per
+                    destination node and routing node to fit <i>PackeRL</i>'s definition action space design.
+                    <i>FieldLines</i> uses its actor module to obtain next-hop ratings per edge and destination node,
+                    illustrated by the respective colors of the rating values, and then uses these ratings to select
+                    next-hop neighbors per destination and routing node.
+                </p>
+                <br>
+
+            </div>
+        </div>
+
+        <h2 class="title is-3">Experimental Results</h2>
+
+        <div class="columns is-centered">
+            <div class="column is-full-width">
+
+                <p>
+                    We evaluate the performance of <i>M-Slim</i> and <i>FieldLines</i> in a wide range of network scenarios that
+                    include very small to very large network topologies, different traffic mixes and intensities, and link failures.
+                    In a nutshell, we find that <i>M-Slim</i> excels at high traffic volumes and greatly reduces inference time
+                    compared to MAGNNETO. However, its
+                    shortest-paths approach still scales poorly to large network topologies. <i>FieldLines</i> on the other hand
+                    is able to re-optimize routing within milliseconds for any evaluated network topology and traffic situation,
+                    achieving almost the same performance as <i>M-Slim</i>. In any case, both algorithms outperform commonly used
+                    static baseline protocols like OSPF or EIGRP. On the other hand, MAGNNETO, which has been trained in a fluid-based environment,
+                    is not able to generalize well to the packet-level dynamics of the <i>PackeRL</i> environment.
+                </p>
+
+                <img src="./static/images/result_nx_xs.png" style="width: auto; height: auto; margin-left: auto; margin-right: auto;
+          display: block;">
+                <br>
+                <p>
+                    Figure 4: Results on small network topologies per approach and performance metric.
+                    Cells show the mean values over 100 evaluation episodes in the first line,
+                    and min and max values across random seeds in the second line.
+                    Values are relative to EIGRP. Both our approaches outperform the shortest-path baselines
+                    in high-traffic scenarios, and the difference in performance to MAGNNETO shows
+                    that learning to route in packet-based environments is important.
+                </p>
+                <br>
+
+                <img src="./static/images/inference_and_step_times.png" style="width: auto; height: auto; margin-left: auto; margin-right: auto;
+          display: block;">
+                <br>
+                <p>
+                    Figure 5: Left side: Mean inference times per <i>PackeRL</i> step on different network sizes.
+                    Our policies reduce the inference time required by MAGNNETO, by multiple orders of magnitude.
+                    Right side: Simulation steps per hour, including shared memory communication but
+                    excluding inference and learning times. Simulating TCP traffic in <i>PackeRL</i> is more costly
+                    than UDP traffic, and simulation speed depends on traffic intensity and network scale. Yet, since
+                    <i>PackeRL</i> uses a shared memory pool to facilitate communication between learning loop and
+                    network simulation, it simulates several times more steps per hour than comparable packet-level
+                    simulators using messaging libraries.
+                </p>
+            </div>
+        </div>
+        <br>
+
+        <div class="container is-max-desktop">
+            <h2 class="title is-5"><i>For more details and results, <a href="https://openreview.net/pdf?id=H95g8UpYKY">check out the paper</a>!</i></h2>
+        </div>
+
+        <!--
+        <h2 class="title is-3">Post-Publication Updates</h2>
+
+        TODO Add post-publication updates here if necessary.
+        -->
+    </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>TODO</code></pre>
+    </div>
+</section>
+
+
+</body>
+</html>
